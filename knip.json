@@ -1,0 +1,29 @@
+{
+  "$schema": "https://unpkg.com/knip@6.3.0/schema.json",
+  "workspaces": {
+    ".": {
+      "entry": ["scripts/**/*.ts"],
+      "ignore": ["**/*.config.ts"]
+    },
+    "apps/*": {
+      "entry": ["src/index.ts", "src/main.ts"],
+      "ignore": ["**/*.test.ts", "**/*.spec.ts"]
+    },
+    "pkgs/*": {
+      "entry": ["src/index.ts"],
+      "ignore": ["**/*.test.ts", "**/*.spec.ts"]
+    }
+  },
+  "ignore": ["**/dist/**", "**/node_modules/**", "**/.turbo/**"],
+  "ignoreDependencies": [
+    "@types/bun",
+    "typescript",
+    "@types/bun",
+    "typescript",
+    "turbo",
+    "oxlint",
+    "knip",
+    "@biomejs/biome",
+    "stylelint"
+  ]
+}
