@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
+  "plugins": ["react", "typescript", "unicorn"],
+  "extends": ["oxlint:recommended"],
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "unicorn/filename-case": "off"
+  },
+  "ignorePatterns": ["**/dist/**", "**/node_modules/**", "**/.turbo/**"]
+}
